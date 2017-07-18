@@ -23,6 +23,8 @@ Using `/tmp/centos_ks` as the working folder:
  
 #### Make ISO
 
-` sudo mkisofs -R -J -v -T -no-emul-boot -boot-load-size 4 -boot-info-table -joliet-long -o ~/centos/CentOS-7-custom.iso -b isolinux/isolinux.bin -c isolinux/boot.cat -V "CentOS 7 x86_64" .`
+```
+sudo mkisofs -R -J -v -T -no-emul-boot -boot-load-size 4 -boot-info-table -joliet-long -o ~/centos/CentOS-7-custom.iso -b isolinux/isolinux.bin -c isolinux/boot.cat -V "CentOS 7 x86_64" .
+```
 
 **N.B.** Volume label needs to be equal to what's used in `isolinux.cfg`
